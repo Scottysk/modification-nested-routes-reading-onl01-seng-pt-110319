@@ -3858,3 +3858,13 @@ Redirected to http://192.241.157.192:58202/posts/15
 Completed 302 Found in 16ms (ActiveRecord: 6.3ms)
 
 
+Started GET "/posts/15" for 73.244.211.24 at 2020-04-27 04:05:07 +0000
+Cannot render console from 73.244.211.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.2ms)
+
+
